@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Text difference</h2>
+
+    <div class="inputs">
+    <textarea [(ngModel)]="text1" placeholder="Texto original"></textarea>
+    <textarea [(ngModel)]="text2" placeholder="Texto modificado"></textarea>
+  </div>
+
+  <div class="buttons">
+    <button (click)="compareTexts()">Compare</button>
+    <button (click)="clearAll()">Clean</button>
+  </div> 
+
+  <div class="comparison-message" *ngIf="comparisonMessage">
+    {{ comparisonMessage }}
+  </div>
+  
+  <div class="results">
+    <div class="result" [innerHTML]="diffHtml1"></div>
+    <div class="result" [innerHTML]="diffHtml2"></div>
+  </div>
+
+</div>

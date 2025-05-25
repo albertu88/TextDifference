@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #64696b;
+}
+span.added {
+  background-color: #629b6d; /* verde claro */
+}
+
+span.removed {
+  background-color: rgb(167, 79, 79); /* rojo claro */
+  text-decoration: line-through;
+}
